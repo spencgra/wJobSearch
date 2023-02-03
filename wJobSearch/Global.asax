@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="wJobSearch.Global_asax" Language="C#" %>

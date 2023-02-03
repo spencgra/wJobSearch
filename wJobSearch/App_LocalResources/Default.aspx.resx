@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASPxRoundPanel1Resource1.CollapseButtonImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.CollapseButtonImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.CollapseButtonImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.CollapseButtonImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.ExpandButtonImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.ExpandButtonImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.ExpandButtonImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.ExpandButtonImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.HeaderImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.HeaderImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.HeaderImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.HeaderImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.HeaderText" xml:space="preserve">
+    <value>Header</value>
+  </data>
+  <data name="ASPxRoundPanel1Resource1.LoadingPanelImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.LoadingPanelImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.LoadingPanelImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.LoadingPanelImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASPxRoundPanel1Resource1.SettingsLoadingPanel.Text" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="ASPxRoundPanel1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ChartTitleResource1.Alignment" type="System.Drawing.StringAlignment, System.Drawing">
+    <value>Center</value>
+  </data>
+  <data name="ChartTitleResource1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt</value>
+  </data>
+  <data name="ChartTitleResource1.Text" xml:space="preserve">
+    <value>Job Search Status by Status Type</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PanelContentResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebChartControlResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="WebChartControlResource1.Breadcrumbs.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="WebChartControlResource1.Breadcrumbs.HomeText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebChartControlResource1.EmptyChartText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="WebChartControlResource1.EmptyChartText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="DevExpress.XtraCharts.v22.1" name="DevExpress.XtraCharts.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="WebChartControlResource1.Legend.AlignmentHorizontal" type="DevExpress.XtraCharts.LegendAlignmentHorizontal, DevExpress.XtraCharts.v22.1">
+    <value>RightOutside</value>
+  </data>
+  <data name="WebChartControlResource1.Legend.AlignmentVertical" type="DevExpress.XtraCharts.LegendAlignmentVertical, DevExpress.XtraCharts.v22.1">
+    <value>Top</value>
+  </data>
+  <data name="WebChartControlResource1.Legend.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="WebChartControlResource1.LoadingPanelImage.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebChartControlResource1.LoadingPanelImage.DescriptionUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebChartControlResource1.LoadingPanelImage.IconID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebChartControlResource1.LoadingPanelImage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebChartControlResource1.LoadingPanelText" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="WebChartControlResource1.SeriesNameTemplate.BeginText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebChartControlResource1.SeriesNameTemplate.EndText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebChartControlResource1.SeriesTemplate.CrosshairEmptyValueLegendText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebChartControlResource1.SeriesTemplate.LegendText" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="WebChartControlResource1.SettingsLoadingPanel.Text" xml:space="preserve">
+    <value>Loading&amp;hellip;</value>
+  </data>
+  <data name="WebChartControlResource1.SmallChartText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="WebChartControlResource1.SmallChartText.Text" xml:space="preserve">
+    <value>Increase the chart's size,
+to view its layout.</value>
+  </data>
+  <data name="WebChartControlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="XYDiagramResource1.AxisX.Alignment" type="DevExpress.XtraCharts.AxisAlignment, DevExpress.XtraCharts.v22.1">
+    <value>Near</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="XYDiagramResource1.AxisX.Label.Angle" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="XYDiagramResource1.AxisX.Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="XYDiagramResource1.AxisX.Label.TextAlignment" type="System.Drawing.StringAlignment, System.Drawing">
+    <value>Center</value>
+  </data>
+  <data name="XYDiagramResource1.AxisX.Title.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="XYDiagramResource1.AxisX.Title.Text" xml:space="preserve">
+    <value>Status Type</value>
+  </data>
+  <data name="XYDiagramResource1.AxisY.Alignment" type="DevExpress.XtraCharts.AxisAlignment, DevExpress.XtraCharts.v22.1">
+    <value>Near</value>
+  </data>
+  <data name="XYDiagramResource1.AxisY.Label.Angle" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="XYDiagramResource1.AxisY.Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="XYDiagramResource1.AxisY.Label.TextAlignment" type="System.Drawing.StringAlignment, System.Drawing">
+    <value>Center</value>
+  </data>
+  <data name="XYDiagramResource1.AxisY.Title.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="XYDiagramResource1.AxisY.Title.Text" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="XYDiagramResource1.DefaultPane.Title.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt, style=Bold</value>
+  </data>
+  <data name="XYDiagramResource1.DefaultPane.Title.Text" xml:space="preserve">
+    <value />
+  </data>
+</root>
