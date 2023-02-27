@@ -249,7 +249,7 @@
     </asp:SqlDataSource>
 
     <asp:SqlDataSource ID="JobHistoryData" runat="server" ConnectionString='<%$ ConnectionStrings:JobSearchConnectionString2022 %>'
-        SelectCommand="SELECT HistID, JobID, Status, StatusDate, StatusDescription FROM Jobs.JobSearchHistory WHERE (JobID = @JobID)"
+        SelectCommand="SELECT HistID, JobID, Status, StatusDate, StatusDescription FROM Jobs.JobSearchHistory WHERE (JobID = @JobID) ORDER BY StatusDate, Status"
         InsertCommand="INSERT INTO Jobs.JobSearchHistory(JobID, Status, StatusDescription) VALUES (@JobID, @Status, @StatusDescription)">
         <SelectParameters>
             <asp:SessionParameter SessionField="JobID" Name="JobID" Type="Int32"></asp:SessionParameter>
