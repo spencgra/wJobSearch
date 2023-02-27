@@ -35,8 +35,9 @@
                                 <%-- DXCOMMENT: Configure the header menu --%>
                                 <dx:ASPxMenu ID="ASPxMenu1" runat="server" ItemAutoWidth="False" Width="100%">
                                     <Items>
-                                        <dx:MenuItem Text="Job Details" NavigateUrl="JobInput.aspx"></dx:MenuItem>
-                                        <dx:MenuItem Text="Item 2"></dx:MenuItem>
+                                        <dx:MenuItem Text="Home" NavigateUrl="Default.aspx"></dx:MenuItem>
+                                        <dx:MenuItem Text="Job Input" NavigateUrl="JobInput.aspx"></dx:MenuItem>
+                                        <dx:MenuItem Text="Job Report" NavigateUrl="JobReport.aspx"></dx:MenuItem>
                                         <dx:MenuItem Text="Item 3"></dx:MenuItem>
                                         <dx:MenuItem Text="Item 4"></dx:MenuItem>
                                     </Items>
