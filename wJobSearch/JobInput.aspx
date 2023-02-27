@@ -143,25 +143,61 @@
 
                                     <Templates>
                                         <DetailRow>
-                                            <dx:ASPxGridView ID="DetailGrid" runat="server" AutoGenerateColumns="False" DataSourceID="JobHistoryData" KeyFieldName="HistID" Theme="DevEx" OnBeforePerformDataSelect="DetailGrid_BeforePerformDataSelect">
 
-                                                <SettingsDataSecurity AllowDelete="False" AllowEdit="False"></SettingsDataSecurity>
-                                                <SettingsEditing Mode="Batch" BatchEditSettings-EditMode="Row" BatchEditSettings-StartEditAction="Click" />
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <asp:Panel ID="Panel1" runat="server" BorderColor="#666666" BorderStyle="Solid" BorderWidth="1px" BackColor="Gray">
+                                                            <dx:ASPxLabel ID="ASPxLabel1" runat="server" Text="Job Status History" Font-Bold="false" Theme="DevEx" ForeColor="White" CssClass="detailheader"></dx:ASPxLabel>
+                                                        </asp:Panel>
+                                                        <dx:ASPxGridView ID="DetailGrid" runat="server" AutoGenerateColumns="False" DataSourceID="JobHistoryData" KeyFieldName="HistID" Theme="DevEx" OnBeforePerformDataSelect="DetailGrid_BeforePerformDataSelect">
 
-                                                <Columns>
-                                                    <dx:GridViewCommandColumn VisibleIndex="0" Width="40px" ShowNewButtonInHeader="true"></dx:GridViewCommandColumn>
-                                                    <dx:GridViewDataTextColumn FieldName="JobID" ReadOnly="True" VisibleIndex="2">
-                                                        <EditFormSettings Visible="False"></EditFormSettings>
-                                                    </dx:GridViewDataTextColumn>
-                                                    <dx:GridViewDataComboBoxColumn FieldName="Status" VisibleIndex="3" Width="175px" Caption="Status">
-                                                        <PropertiesComboBox DataSourceID="JobStatusLookup" TextField="Status" ValueField="StatusID" ValueType="System.Int32" EnableSynchronization="false" DataSecurityMode="Strict"></PropertiesComboBox>
-                                                    </dx:GridViewDataComboBoxColumn>
-                                                    <dx:GridViewDataDateColumn FieldName="StatusDate" ReadOnly="true" VisibleIndex="4">
-                                                        <EditFormSettings Visible="False"></EditFormSettings>
-                                                    </dx:GridViewDataDateColumn>
-                                                    <dx:GridViewDataTextColumn FieldName="StatusDescription" VisibleIndex="4" Width="450px"></dx:GridViewDataTextColumn>
-                                                </Columns>
-                                            </dx:ASPxGridView>
+                                                            <SettingsDataSecurity AllowDelete="False" AllowEdit="False"></SettingsDataSecurity>
+                                                            <SettingsEditing Mode="Batch" BatchEditSettings-EditMode="Row" BatchEditSettings-StartEditAction="Click" />
+
+                                                            <Columns>
+                                                                <dx:GridViewCommandColumn VisibleIndex="0" Width="40px" ShowNewButtonInHeader="true"></dx:GridViewCommandColumn>
+                                                                <dx:GridViewDataTextColumn FieldName="JobID" ReadOnly="True" VisibleIndex="2">
+                                                                    <EditFormSettings Visible="False"></EditFormSettings>
+                                                                </dx:GridViewDataTextColumn>
+                                                                <dx:GridViewDataComboBoxColumn FieldName="Status" VisibleIndex="3" Width="175px" Caption="Status">
+                                                                    <PropertiesComboBox DataSourceID="JobStatusLookup" TextField="Status" ValueField="StatusID" ValueType="System.Int32" EnableSynchronization="false" DataSecurityMode="Strict"></PropertiesComboBox>
+                                                                </dx:GridViewDataComboBoxColumn>
+                                                                <dx:GridViewDataDateColumn FieldName="StatusDate" ReadOnly="true" VisibleIndex="4">
+                                                                    <EditFormSettings Visible="False"></EditFormSettings>
+                                                                </dx:GridViewDataDateColumn>
+                                                                <dx:GridViewDataTextColumn FieldName="StatusDescription" VisibleIndex="4" Width="450px"></dx:GridViewDataTextColumn>
+                                                            </Columns>
+                                                        </dx:ASPxGridView>
+                                                    </td>
+                                                    <td style="width: 30px"></td>
+                                                    <td style="vertical-align: top">
+                                                        <asp:Panel ID="Panel2" runat="server" BorderColor="#666666" BorderStyle="Solid" BorderWidth="1px" BackColor="Gray">
+                                                            <dx:ASPxLabel ID="ASPxLabel2" runat="server" Text="Interview Details" Font-Bold="false" Theme="DevEx" ForeColor="White" CssClass="detailheader"></dx:ASPxLabel>
+                                                        </asp:Panel>
+
+                                                        <dx:ASPxGridView ID="InterviewDetails" runat="server" DataSourceID="JobInterviewDetailsData" KeyFieldName="intID" AutoGenerateColumns="False" Theme="DevEx" OnBeforePerformDataSelect="InterviewDetails_BeforePerformDataSelect">
+
+                                                            <SettingsDataSecurity AllowDelete="False" AllowEdit="False"></SettingsDataSecurity>
+                                                            <SettingsEditing Mode="Batch" BatchEditSettings-EditMode="Row" BatchEditSettings-StartEditAction="Click" />
+
+                                                            <Columns>
+                                                                <dx:GridViewCommandColumn VisibleIndex="0" Width="40px" ShowNewButtonInHeader="true"></dx:GridViewCommandColumn>
+                                                                <dx:GridViewDataTextColumn FieldName="JobID" VisibleIndex="1">
+                                                                    <EditFormSettings Visible="False"></EditFormSettings>
+                                                                </dx:GridViewDataTextColumn>
+                                                                <dx:GridViewDataDateColumn FieldName="InterviewDate" VisibleIndex="2"></dx:GridViewDataDateColumn>
+                                                                <dx:GridViewDataComboBoxColumn FieldName="InterviewType" VisibleIndex="3" Width="120px" Caption="Interview Type">
+                                                                    <PropertiesComboBox DataSourceID="InterviewTypeLookup" TextField="InterviewType" ValueField="IntTypeID" ValueType="System.Int32" EnableSynchronization="false" DataSecurityMode="Strict"></PropertiesComboBox>
+                                                                </dx:GridViewDataComboBoxColumn>
+                                                                <dx:GridViewDataTextColumn FieldName="InterviewLocation" VisibleIndex="4"></dx:GridViewDataTextColumn>
+                                                                <dx:GridViewDataTextColumn FieldName="InterviewNotes" VisibleIndex="5" Width="369px"></dx:GridViewDataTextColumn>
+                                                            </Columns>
+                                                        </dx:ASPxGridView>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
                                         </DetailRow>
                                     </Templates>
 
@@ -242,6 +278,9 @@
 
     <asp:SqlDataSource ID="JobStatusLookup" runat="server" ConnectionString='<%$ ConnectionStrings:JobSearchConnectionString2022 %>'
         SelectCommand="SELECT [StatusID], [Status], [SortOrder] FROM Jobs.StatusLookup"></asp:SqlDataSource>
+
+    <asp:SqlDataSource ID="InterviewTypeLookup" runat="server" ConnectionString='<%$ ConnectionStrings:JobSearchConnectionString2022 %>'
+        SelectCommand="SELECT IntTypeID, InterviewType FROM Interview.InterviewTypeLookup"></asp:SqlDataSource>
 
     <asp:SqlDataSource ID="SiteLookup" runat="server" ConnectionString='<%$ ConnectionStrings:JobSearchConnectionString2022 %>'
         SelectCommand="SELECT SiteID, SiteName, SiteTopLink FROM Jobs.JobSiteDetails"

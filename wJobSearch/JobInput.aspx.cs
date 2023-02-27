@@ -18,5 +18,10 @@ namespace wJobSearch
         {
             Session["JobID"] = (sender as ASPxGridView).GetMasterRowKeyValue();
         }
+
+        protected void InterviewDetails_BeforePerformDataSelect(object sender, EventArgs e)
+        {
+            Session["iJobID"] = (sender as ASPxGridView).GetMasterRowKeyValue();
+        }
     }
 }
