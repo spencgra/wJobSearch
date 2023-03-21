@@ -250,13 +250,14 @@
 
     <asp:SqlDataSource ID="JobHistoryData" runat="server" ConnectionString='<%$ ConnectionStrings:JobSearchConnectionString2022 %>'
         SelectCommand="SELECT HistID, JobID, Status, StatusDate, StatusDescription FROM Jobs.JobSearchHistory WHERE (JobID = @JobID) ORDER BY StatusDate, Status"
-        InsertCommand="INSERT INTO Jobs.JobSearchHistory(JobID, Status, StatusDescription) VALUES (@JobID, @Status, @StatusDescription)">
+        InsertCommand="INSERT INTO Jobs.JobSearchHistory(JobID, Status, StatusDate, StatusDescription) VALUES (@JobID, @Status, @StatusDate, @StatusDescription)">
         <SelectParameters>
             <asp:SessionParameter SessionField="JobID" Name="JobID" Type="Int32"></asp:SessionParameter>
         </SelectParameters>
         <InsertParameters>
             <asp:SessionParameter SessionField="JobID" Name="JobID" Type="Int32"></asp:SessionParameter>
             <asp:Parameter Name="Status" Type="Int32" />
+            <asp:Parameter Name="StatusDate" Type="DateTime" />
             <asp:Parameter Name="StatusDescription" Type="String" />
         </InsertParameters>
     </asp:SqlDataSource>
