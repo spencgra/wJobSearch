@@ -152,7 +152,7 @@
                                                         </asp:Panel>
                                                         <dx:ASPxGridView ID="DetailGrid" runat="server" AutoGenerateColumns="False" DataSourceID="JobHistoryData" KeyFieldName="HistID" Theme="DevEx" OnBeforePerformDataSelect="DetailGrid_BeforePerformDataSelect">
 
-                                                            <SettingsDataSecurity AllowDelete="False"></SettingsDataSecurity>
+                                                            <SettingsDataSecurity></SettingsDataSecurity>
                                                             <SettingsEditing Mode="Batch" BatchEditSettings-EditMode="Row" BatchEditSettings-StartEditAction="Click" />
 
                                                             <Columns>

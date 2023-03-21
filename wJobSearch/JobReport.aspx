@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.master" AutoEventWireup="true" CodeBehind="JobReport.aspx.cs" Inherits="wJobSearch.JobReport" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>
-        Active Job Report
+    <h1>Active Job Report
     </h1>
     <dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" KeyFieldName="JobID" Theme="DevEx" EnableTheming="True">
 
@@ -28,7 +27,11 @@
             <dx:GridViewFormatConditionHighlight FieldName="ReplyStatus" Expression="[ReplyStatus] = 'NRIT'" Format="LightRedFillWithDarkRedText"></dx:GridViewFormatConditionHighlight>
             <dx:GridViewFormatConditionHighlight FieldName="ReplyStatus" Expression="[ReplyStatus] = 'OK'" Format="GreenFillWithDarkGreenText"></dx:GridViewFormatConditionHighlight>
         </FormatConditions>
+        <Settings showfooter="true" />
         <SettingsPager PageSize="20" />
+        <TotalSummary>
+            <dx:ASPxSummaryItem FieldName="JobID" SummaryType="Count" ShowInColumn="JobID" />
+        </TotalSummary>
     </dx:ASPxGridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:JobSearchConnectionString2022 %>' SelectCommand="SELECT * FROM Jobs.v_JobDetails_Active"></asp:SqlDataSource>
 </asp:Content>
