@@ -1,15 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.master" AutoEventWireup="true" CodeBehind="JobReport.aspx.cs" Inherits="wJobSearch.JobReport" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <h1>
+        Active Job Report
+    </h1>
     <dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" KeyFieldName="JobID" Theme="DevEx" EnableTheming="True">
+
         <Columns>
-            <dx:GridViewDataTextColumn FieldName="JobID" ReadOnly="True" VisibleIndex="0"></dx:GridViewDataTextColumn>
-            <dx:GridViewDataTextColumn FieldName="Job Site" VisibleIndex="1"></dx:GridViewDataTextColumn>
-            <dx:GridViewDataTextColumn FieldName="Employer Name" VisibleIndex="2"></dx:GridViewDataTextColumn>
-            <dx:GridViewDataTextColumn FieldName="JobTitle" VisibleIndex="3"></dx:GridViewDataTextColumn>
-            <dx:GridViewDataTextColumn FieldName="JobSiteLink" VisibleIndex="4"></dx:GridViewDataTextColumn>
-            <dx:GridViewDataTextColumn FieldName="LastStatus" VisibleIndex="5"></dx:GridViewDataTextColumn>
-            <dx:GridViewDataDateColumn FieldName="StatusDate" VisibleIndex="6" Width="90px"></dx:GridViewDataDateColumn>
-            <dx:GridViewDataTextColumn FieldName="InUC" ReadOnly="True" VisibleIndex="7"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="JobID" ReadOnly="True" VisibleIndex="0" Width="50px"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="Job Site" VisibleIndex="1" Width="110px"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="Employer Name" VisibleIndex="2" Width="170px"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="JobTitle" VisibleIndex="3" Width="150" CellStyle-Wrap="False" Settings-AllowEllipsisInText="True"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="JobSiteLink" VisibleIndex="4" Width="850px"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="LastStatus" VisibleIndex="5" Width="80px"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataDateColumn FieldName="StatusDate" VisibleIndex="6" Width="100px"></dx:GridViewDataDateColumn>
+            <dx:GridViewDataTextColumn FieldName="InUC" ReadOnly="True" VisibleIndex="7" Width="45px"></dx:GridViewDataTextColumn>
             <dx:GridViewDataDateColumn FieldName="ClosingDate" VisibleIndex="8"></dx:GridViewDataDateColumn>
             <dx:GridViewDataTextColumn FieldName="Interview Date" ReadOnly="True" VisibleIndex="9"></dx:GridViewDataTextColumn>
             <dx:GridViewDataTextColumn FieldName="Interview Type" VisibleIndex="10"></dx:GridViewDataTextColumn>
@@ -18,6 +23,7 @@
         <FormatConditions>
             <dx:GridViewFormatConditionIconSet FieldName="StatusDate" Format="TrafficLights3Unrimmed"></dx:GridViewFormatConditionIconSet>
         </FormatConditions>
+        <SettingsPager PageSize="20" />
     </dx:ASPxGridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:JobSearchConnectionString2022 %>' SelectCommand="SELECT * FROM Jobs.v_JobDetails_Active"></asp:SqlDataSource>
 </asp:Content>

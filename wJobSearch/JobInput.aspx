@@ -163,8 +163,8 @@
                                                                 <dx:GridViewDataComboBoxColumn FieldName="Status" VisibleIndex="3" Width="175px" Caption="Status">
                                                                     <PropertiesComboBox DataSourceID="JobStatusLookup" TextField="Status" ValueField="StatusID" ValueType="System.Int32" EnableSynchronization="false" DataSecurityMode="Strict"></PropertiesComboBox>
                                                                 </dx:GridViewDataComboBoxColumn>
-                                                                <dx:GridViewDataDateColumn FieldName="StatusDate" ReadOnly="true" VisibleIndex="4">
-                                                                    <EditFormSettings Visible="False"></EditFormSettings>
+                                                                <dx:GridViewDataDateColumn FieldName="StatusDate" ReadOnly="False" VisibleIndex="4">
+                                                                    <EditFormSettings Visible="True"></EditFormSettings>
                                                                 </dx:GridViewDataDateColumn>
                                                                 <dx:GridViewDataTextColumn FieldName="StatusDescription" VisibleIndex="4" Width="450px"></dx:GridViewDataTextColumn>
                                                             </Columns>
