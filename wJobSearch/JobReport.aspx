@@ -33,5 +33,5 @@
             <dx:ASPxSummaryItem FieldName="JobID" SummaryType="Count" ShowInColumn="JobID" />
         </TotalSummary>
     </dx:ASPxGridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:JobSearchConnectionString2022 %>' SelectCommand="SELECT * FROM Jobs.v_JobDetails_Active"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:JobSearchConnectionString2022 %>' SelectCommand="SELECT * FROM Jobs.v_JobDetails_Active ORDER BY JobID DESC"></asp:SqlDataSource>
 </asp:Content>
