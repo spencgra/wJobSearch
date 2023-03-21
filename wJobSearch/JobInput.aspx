@@ -152,7 +152,7 @@
                                                         </asp:Panel>
                                                         <dx:ASPxGridView ID="DetailGrid" runat="server" AutoGenerateColumns="False" DataSourceID="JobHistoryData" KeyFieldName="HistID" Theme="DevEx" OnBeforePerformDataSelect="DetailGrid_BeforePerformDataSelect">
 
-                                                            <SettingsDataSecurity AllowDelete="False" AllowEdit="False"></SettingsDataSecurity>
+                                                            <SettingsDataSecurity AllowDelete="False"></SettingsDataSecurity>
                                                             <SettingsEditing Mode="Batch" BatchEditSettings-EditMode="Row" BatchEditSettings-StartEditAction="Click" />
 
                                                             <Columns>
@@ -163,9 +163,7 @@
                                                                 <dx:GridViewDataComboBoxColumn FieldName="Status" VisibleIndex="3" Width="175px" Caption="Status">
                                                                     <PropertiesComboBox DataSourceID="JobStatusLookup" TextField="Status" ValueField="StatusID" ValueType="System.Int32" EnableSynchronization="false" DataSecurityMode="Strict"></PropertiesComboBox>
                                                                 </dx:GridViewDataComboBoxColumn>
-                                                                <dx:GridViewDataDateColumn FieldName="StatusDate" ReadOnly="False" VisibleIndex="4">
-                                                                    <EditFormSettings Visible="True"></EditFormSettings>
-                                                                </dx:GridViewDataDateColumn>
+                                                                <dx:GridViewDataDateColumn FieldName="StatusDate" VisibleIndex="4"></dx:GridViewDataDateColumn>
                                                                 <dx:GridViewDataTextColumn FieldName="StatusDescription" VisibleIndex="4" Width="450px"></dx:GridViewDataTextColumn>
                                                             </Columns>
                                                         </dx:ASPxGridView>
